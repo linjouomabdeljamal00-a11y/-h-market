@@ -16,15 +16,14 @@ const P = [
 ["iPhone 15","Téléphones",270000,"📱"],
 
 ["iPhone 14 Pro Max","Téléphones",320000,"📱"],
-["iPhone 14 Pro","Téléphones",280000,"📱"],
+["iPhone 14 Pro","Téléphones",280000,"IMG_2035.jpeg"],
 ["iPhone 14 Plus","Téléphones",220000,"📱"],
 ["iPhone 14","Téléphones",190000,"📱"],
 
 ["iPhone 13 Pro Max","Téléphones",255000,"📱"],
 ["iPhone 13 Pro","Téléphones",220000,"📱"],
-["iPhone 13","Téléphones",159000,"📱"],
 ["iPhone 13 Mini","Téléphones",145000,"📱"],
-
+["iPhone 13","Téléphones",159000,"IMG_2034.jpeg"],
 ["iPhone 12 Pro Max","Téléphones",185000,"📱"],
 ["iPhone 12 Pro","Téléphones",150000,"📱"],
 ["iPhone 12","Téléphones",115000,"📱"],
@@ -80,7 +79,11 @@ function render(){
 
       <article class="card">
 
-        <div class="pic">${p[3]}</div>
+        <div class="pic">
+
+  <img src="${p[3]}" alt="${p[0]}">
+
+</div>
 
         <div class="body">
 
