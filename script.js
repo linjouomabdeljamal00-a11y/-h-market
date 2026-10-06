@@ -100,11 +100,13 @@ function render(){
             ${f(p[2])}
           </div>
 
-          <button
-            class="btn"
-            onclick="add(${P.indexOf(p)})">
-            Ajouter au panier
-          </button>
+          <button class="btn" onclick="details(${P.indexOf(p)})">
+  👁️ Voir les détails
+</button>
+
+<button class="btn" onclick="add(${P.indexOf(p)})">
+  🛒 Ajouter au panier
+</button>
 
         </div>
 
@@ -266,7 +268,79 @@ document
     );
 
   };
+function details(i){
 
+  const p = P[i];
+
+  document.querySelector("#modalContent").innerHTML = `
+
+    <img
+      src="${p[3]}"
+      alt="${p[0]}"
+      class="modal-image"
+    >
+
+    <span class="tag">${p[1]}</span>
+
+    <h2>${p[0]}</h2>
+
+    <div class="modal-price">
+      ${f(p[2])}
+    </div>
+
+    <p>
+      Découvrez ce produit chez H Market.
+      Contactez-nous pour confirmer la disponibilité,
+      les caractéristiques et les conditions de livraison.
+    </p>
+
+    <button
+      class="btn"
+      onclick="add(${i});closeDetails()">
+      🛒 Ajouter au panier
+    </button>
+
+    <a
+      class="btn white"
+      target="_blank"
+      href="https://wa.me/237696195721?text=${encodeURIComponent(
+        "Bonjour H Market, je souhaite avoir plus de détails sur : " +
+        p[0] +
+        " au prix de " +
+        f(p[2])
+      )}">
+      💬 Demander des informations
+    </a>
+
+  `;
+
+  document
+    .querySelector("#productModal")
+    .classList.add("open");
+}
+
+
+function closeDetails(){
+
+  document
+    .querySelector("#productModal")
+    .classList.remove("open");
+
+}
+
+
+document.querySelector("#modalClose").onclick =
+  closeDetails;
+
+
+document.querySelector("#productModal").onclick =
+  function(e){
+
+    if(e.target === this){
+      closeDetails();
+    }
+
+  };
 
 render();
 
