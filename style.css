@@ -967,3 +967,129 @@ body::after{
     padding:10px 5px;
   }
 }
+/* ================================
+   FOND ANIMÉ PREMIUM H MARKET
+================================ */
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  background: #f8fafc;
+}
+
+/* Couche du fond animé */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(249, 115, 22, 0.20) 0,
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 85% 25%,
+      rgba(37, 99, 235, 0.18) 0,
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 75% 85%,
+      rgba(249, 115, 22, 0.15) 0,
+      transparent 28%
+    ),
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #f8fafc 50%,
+      #eef5ff 100%
+    );
+}
+
+/* Formes lumineuses */
+body::after {
+  content: "";
+  position: fixed;
+  width: 380px;
+  height: 380px;
+  left: -120px;
+  top: 20%;
+  z-index: -1;
+  pointer-events: none;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(249, 115, 22, 0.28) 0%,
+    rgba(249, 115, 22, 0.10) 35%,
+    transparent 70%
+  );
+
+  filter: blur(20px);
+
+  animation: floatOrange 14s ease-in-out infinite alternate;
+}
+
+/* Animation orange */
+@keyframes floatOrange {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(180px, 80px) scale(1.15);
+  }
+
+  100% {
+    transform: translate(80px, 260px) scale(0.9);
+  }
+}
+
+/* Forme bleue animée */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+
+  width: 320px;
+  height: 320px;
+
+  right: -100px;
+  top: -100px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(37, 99, 235, 0.30) 0%,
+    rgba(37, 99, 235, 0.12) 40%,
+    transparent 70%
+  );
+
+  filter: blur(15px);
+
+  animation: floatBlue 12s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes floatBlue {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(-120px, 100px) scale(1.2);
+  }
+
+  100% {
+    transform: translate(-40px, 220px) scale(0.9);
+  }
+}
