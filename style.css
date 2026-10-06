@@ -538,11 +538,19 @@ nav a:hover {
 
 .cats {
   display: grid;
-
-  grid-template-columns:
-    repeat(7, 1fr);
-
-  gap: 13px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+@media (max-width: 1000px) {
+  .cats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .cats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
 }
 
 .cats button {
