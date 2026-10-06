@@ -437,3 +437,67 @@ font-size:30px
 }
 
 }
+
+.modal{
+position:fixed;
+inset:0;
+background:#0008;
+display:none;
+align-items:center;
+justify-content:center;
+padding:20px;
+z-index:30;
+}
+
+.modal.open{
+display:flex;
+}
+
+.modal-box{
+position:relative;
+background:white;
+width:min(500px,100%);
+max-height:90vh;
+overflow:auto;
+border-radius:22px;
+padding:25px;
+box-shadow:0 20px 60px #0005;
+}
+
+.modal-close{
+position:absolute;
+right:15px;
+top:10px;
+border:0;
+background:white;
+font-size:30px;
+cursor:pointer;
+}
+
+.modal-image{
+width:90%;
+height:300px;
+object-fit:contain;
+display:block;
+margin:0 auto 20px;
+}
+
+.modal-box h2{
+font-size:25px;
+margin:8px 0;
+}
+
+.modal-price{
+font-size:24px;
+font-weight:900;
+margin:15px 0;
+}
+
+.modal-box p{
+color:var(--muted);
+line-height:1.7;
+}
+
+.modal-box .btn{
+margin-top:8px;
+}
