@@ -1279,3 +1279,71 @@ footer::first-letter {
     font-size: 34px;
   }
 }
+
+/* ===== CATÉGORIES H MARKET ===== */
+
+.cats button {
+  position: relative;
+  overflow: hidden;
+  min-height: 150px;
+  border-radius: 22px;
+  border: 1px solid rgba(139,30,63,.12);
+  background: linear-gradient(145deg,#fff,#f8f1f4);
+  box-shadow: 0 10px 25px rgba(0,0,0,.07);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.cats button:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(139,30,63,.16);
+}
+
+.cats button:first-letter {
+  font-size: 42px;
+}
+
+.cats button b {
+  display: block;
+  margin-top: 10px;
+  color: #8B1E3F;
+  font-size: 17px;
+}
+
+.cats button small {
+  display: block;
+  margin-top: 6px;
+  color: #667085;
+  font-size: 13px;
+}
+
+/* Effet lumineux */
+
+.cats button::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  right: -30px;
+  bottom: -35px;
+  border-radius: 50%;
+  background: rgba(139,30,63,.08);
+}
+
+/* Mobile */
+
+@media (max-width:700px) {
+
+  .cats button {
+    min-height: 135px;
+    padding: 14px 8px;
+  }
+
+  .cats button b {
+    font-size: 15px;
+  }
+
+  .cats button small {
+    font-size: 11px;
+  }
+
+}
