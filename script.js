@@ -1,5 +1,16 @@
 const P = [
-
+["Parfum Femme Élégance","Produits de beauté",25000,"💄"],
+["Parfum Homme Prestige","Produits de beauté",30000,"🧴"],
+["Kit maquillage professionnel","Produits de beauté",18000,"💄"],
+["Sérum visage","Produits de beauté",12000,"✨"],
+["Crème hydratante","Produits de beauté",10000,"🧴"],
+["Huile capillaire","Produits de beauté",8000,"💆"],
+["Perruque Lace Front Naturelle","Perruques",85000,"💇"],
+["Perruque Bob Luxe","Perruques",65000,"💇"],
+["Perruque Longue Ondulée","Perruques",75000,"💇"],
+["Perruque Bouclée Premium","Perruques",90000,"💇"],
+["Perruque Courte Élégante","Perruques",45000,"💇"],
+["Perruque Afro Naturelle","Perruques",55000,"💇"],
 ["iPhone 17 Pro Max","Téléphones",780000,"📱"],
 ["iPhone 17 Pro","Téléphones",720000,"📱"],
 ["iPhone 17 Air","Téléphones",585000,"📱"],
