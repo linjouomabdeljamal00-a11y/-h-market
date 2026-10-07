@@ -3,195 +3,400 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="H Market - électronique, informatique et électroménager au Cameroun">
-<title>H Market — Boutique</title>
-<link rel="stylesheet" href="style.css">
+
+<meta name="description"
+content="H Market — Boutique en ligne au Cameroun : téléphones, ordinateurs, tablettes, électroménager, beauté, perruques et accessoires.">
+
+<title>H Market — Boutique en ligne</title>
+
+<link rel="stylesheet" href="style.css?v=3">
 </head>
+
 <body>
 
 <header>
-<div class="nav">
-<a class="logo" href="#home">
-<b>H</b>
-<span><strong>H MARKET</strong><small>Tout ce qu'il vous faut.</small></span>
-</a>
+  <div class="nav">
 
-<nav>
-<a href="#home">Accueil</a>
-<a href="#categories">Catégories</a>
-<a href="#products">Produits</a>
-<a href="#contact">Contact</a>
-</nav>
+    <a class="logo" href="#home">
+      <b>H</b>
+      <span>
+        <strong>H MARKET</strong>
+        <small>Tout ce qu'il vous faut.</small>
+      </span>
+    </a>
 
-<button id="cartBtn">🛒 <i id="count">0</i></button>
-</div>
+    <nav>
+      <a href="#home">Accueil</a>
+      <a href="#categories">Catégories</a>
+      <a href="#products">Produits</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="cartBtn">
+      🛒 <i id="count">0</i>
+    </button>
+
+  </div>
 </header>
+
 
 <main id="home">
 
+<!-- ================= HERO ================= -->
+
 <section class="hero">
-<div>
-<label>🇨🇲 BOUTIQUE AU CAMEROUN</label>
-<h1>La technologie et la maison,<em> au même endroit.</em></h1>
-<p>Téléphones, ordinateurs, tablettes, électroménager, appareils électriques et accessoires.</p>
 
-<a class="btn" href="#products">Voir les produits</a>
-<a class="btn white" href="https://wa.me/237696195721" target="_blank">💬 WhatsApp</a>
-</div>
+  <div>
 
-<div class="hero-art">📱<span>💻</span><span>🏠</span></div>
-</section>
+    <label>🇨🇲 BOUTIQUE EN LIGNE AU CAMEROUN</label>
 
-<div class="cats">
+    <h1>
+      Tout ce qu'il vous faut,
+      <em>au même endroit.</em>
+    </h1>
 
-  <button data-cat="Téléphones">
+    <p>
+      Téléphones, ordinateurs, tablettes, électroménager,
+      appareils électriques, accessoires, beauté et perruques.
+    </p>
+
+    <a class="btn" href="#products">
+      🛍️ Découvrir nos produits
+    </a>
+
+    <a
+      class="btn white"
+      href="https://wa.me/237696195721"
+      target="_blank">
+      💬 Commander sur WhatsApp
+    </a>
+
+  </div>
+
+  <div class="hero-art">
     📱
-    <b>Téléphones</b>
-    <small>Smartphones & mobiles</small>
-  </button>
-
-  <button data-cat="Ordinateurs">
-    💻
-    <b>Ordinateurs</b>
-    <small>PC & accessoires</small>
-  </button>
-
-  <button data-cat="Tablettes">
-    📲
-    <b>Tablettes</b>
-    <small>iPad & Android</small>
-  </button>
-
-  <button data-cat="Électroménager">
-    🏠
-    <b>Électroménager</b>
-    <small>Maison & cuisine</small>
-  </button>
-
-  <button data-cat="Appareils électriques">
-    ⚡
-    <b>Appareils électriques</b>
-    <small>Énergie & confort</small>
-  </button>
-
-  <button data-cat="Accessoires">
-    🎧
-    <b>Accessoires</b>
-    <small>Audio, câbles & charge</small>
-  </button>
-
-  <button data-cat="Produits de beauté">
-    💄
-    <b>Produits de beauté</b>
-    <small>Beauté & soins</small>
-  </button>
-
-  <button data-cat="Perruques">
-    💇
-    <b>Perruques</b>
-    <small>Perruques & coiffure</small>
-  </button>
-
-  <button data-cat="Gaming & autres">
-    🎮
-    <b>Gaming & autres</b>
-    <small>Loisirs & électronique</small>
-  </button>
-
-</div>
-</section>
-
-<section id="products" class="section">
-
-<div class="head">
-
-<div>
-<label>BOUTIQUE</label>
-<h2>Nos produits</h2>
-</div>
-
-<div>
-<input id="search" placeholder="Rechercher…">
-
-<select id="filter">
-  <option>Toutes</option>
-  <option>Téléphones</option>
-  <option>Ordinateurs</option>
-  <option>Tablettes</option>
-  <option>Électroménager</option>
-  <option>Appareils électriques</option>
-  <option>Accessoires</option>
-  <option>Produits de beauté</option>
-  <option>Perruques</option>
-  <option>Gaming & autres</option>
-</select>
-</div>
-
-</div>
-
-<div id="grid" class="grid"></div>
+    <span>💻</span>
+    <span>💄</span>
+    <span>🏠</span>
+  </div>
 
 </section>
+
+
+<!-- ================= PROMOTION ================= -->
 
 <section class="orange">
 
-<div>
-<label>UNE QUESTION ?</label>
-<h2>Contactez H Market</h2>
-<p>Commandez facilement par WhatsApp.</p>
-</div>
+  <div>
 
-<a class="btn white" href="https://wa.me/237696195721" target="_blank">
-💬 696 195 721
-</a>
+    <label>🔥 OFFRES H MARKET</label>
+
+    <h2>
+      Découvrez nos produits
+    </h2>
+
+    <p>
+      Des produits sélectionnés pour vous.
+      Ajoutez vos articles au panier et commandez facilement.
+    </p>
+
+  </div>
+
+  <a class="btn white" href="#products">
+    Voir la boutique
+  </a>
 
 </section>
 
+
+<!-- ================= CATEGORIES ================= -->
+
+<section id="categories" class="section">
+
+  <label>EXPLOREZ</label>
+
+  <h2>Nos catégories</h2>
+
+  <div class="cats">
+
+    <button data-cat="Téléphones">
+      📱
+      <b>Téléphones</b>
+      <small>Smartphones & mobiles</small>
+    </button>
+
+    <button data-cat="Ordinateurs">
+      💻
+      <b>Ordinateurs</b>
+      <small>PC & accessoires</small>
+    </button>
+
+    <button data-cat="Tablettes">
+      📲
+      <b>Tablettes</b>
+      <small>iPad & Android</small>
+    </button>
+
+    <button data-cat="Électroménager">
+      🏠
+      <b>Électroménager</b>
+      <small>Maison & cuisine</small>
+    </button>
+
+    <button data-cat="Appareils électriques">
+      ⚡
+      <b>Appareils électriques</b>
+      <small>Énergie & confort</small>
+    </button>
+
+    <button data-cat="Accessoires">
+      🎧
+      <b>Accessoires</b>
+      <small>Audio, câbles & charge</small>
+    </button>
+
+    <button data-cat="Produits de beauté">
+      💄
+      <b>Produits de beauté</b>
+      <small>Beauté & soins</small>
+    </button>
+
+    <button data-cat="Perruques">
+      💇
+      <b>Perruques</b>
+      <small>Perruques & coiffure</small>
+    </button>
+
+    <button data-cat="Gaming & autres">
+      🎮
+      <b>Gaming & autres</b>
+      <small>Loisirs & électronique</small>
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PRODUITS ================= -->
+
+<section id="products" class="section">
+
+  <div class="head">
+
+    <div>
+
+      <label>BOUTIQUE</label>
+
+      <h2>Nos produits</h2>
+
+    </div>
+
+    <div>
+
+      <input
+        id="search"
+        type="search"
+        placeholder="🔎 Rechercher un produit…">
+
+      <select id="filter">
+
+        <option>Toutes</option>
+
+        <option>Téléphones</option>
+
+        <option>Ordinateurs</option>
+
+        <option>Tablettes</option>
+
+        <option>Électroménager</option>
+
+        <option>Appareils électriques</option>
+
+        <option>Accessoires</option>
+
+        <option>Produits de beauté</option>
+
+        <option>Perruques</option>
+
+        <option>Gaming & autres</option>
+
+      </select>
+
+    </div>
+
+  </div>
+
+
+  <div id="grid" class="grid"></div>
+
+</section>
+
+
+<!-- ================= AVANTAGES ================= -->
+
+<section class="section">
+
+  <label>H MARKET</label>
+
+  <h2>Pourquoi choisir H Market ?</h2>
+
+  <div class="cats">
+
+    <button>
+      🚚
+      <b>Livraison</b>
+      <small>Livraison selon votre ville</small>
+    </button>
+
+    <button>
+      💬
+      <b>Assistance WhatsApp</b>
+      <small>Une équipe à votre écoute</small>
+    </button>
+
+    <button>
+      🛒
+      <b>Commande facile</b>
+      <small>Ajoutez vos produits au panier</small>
+    </button>
+
+    <button>
+      🇨🇲
+      <b>Au Cameroun</b>
+      <small>Service adapté au marché local</small>
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="orange">
+
+  <div>
+
+    <label>UNE QUESTION ?</label>
+
+    <h2>Contactez H Market</h2>
+
+    <p>
+      Besoin d'informations sur un produit,
+      sa disponibilité ou la livraison ?
+    </p>
+
+  </div>
+
+  <a
+    class="btn white"
+    href="https://wa.me/237696195721"
+    target="_blank">
+
+    💬 696 195 721
+
+  </a>
+
+</section>
+
+
 <section id="contact" class="section contact">
 
-<label>H MARKET</label>
-<h2>Commandez simplement.</h2>
+  <label>H MARKET</label>
 
-<p>
-Ajoutez vos produits au panier puis envoyez votre commande sur WhatsApp.
-Nous confirmerons disponibilité, livraison et paiement.
-</p>
+  <h2>Commandez simplement.</h2>
 
-<a class="btn" href="https://wa.me/237696195721" target="_blank">
-Ouvrir WhatsApp
-</a>
+  <p>
+    Ajoutez vos produits au panier puis envoyez votre commande
+    sur WhatsApp. Nous confirmerons la disponibilité,
+    la livraison et les modalités de paiement.
+  </p>
+
+  <a
+    class="btn"
+    href="https://wa.me/237696195721"
+    target="_blank">
+
+    💬 Ouvrir WhatsApp
+
+  </a>
 
 </section>
 
 </main>
+
+
+<!-- ================= FENÊTRE PRODUIT ================= -->
+
 <div id="productModal" class="modal">
+
   <div class="modal-box">
 
-    <button id="modalClose" class="modal-close">×</button>
+    <button
+      id="modalClose"
+      class="modal-close">
+
+      ×
+
+    </button>
 
     <div id="modalContent"></div>
 
   </div>
+
 </div>
+
+
+<!-- ================= FOOTER ================= -->
+
 <footer>
-© 2026 H Market — Électronique • Informatique • Électroménager
+
+  <strong>H MARKET</strong>
+
+  <p>
+    Électronique • Informatique • Maison • Beauté • Perruques
+  </p>
+
+  <p>
+    🇨🇲 Boutique en ligne au Cameroun
+  </p>
+
+  <p>
+    © 2026 H Market — Tous droits réservés
+  </p>
+
 </footer>
+
+
+<!-- ================= PANIER ================= -->
 
 <aside id="drawer">
 
-<button id="close">×</button>
+  <button id="close">
+    ×
+  </button>
 
-<h2>Votre panier</h2>
+  <h2>
+    🛒 Votre panier
+  </h2>
 
-<div id="items"></div>
+  <div id="items"></div>
 
-<strong id="total">0 FCFA</strong>
+  <strong id="total">
+    0 FCFA
+  </strong>
 
-<button class="btn" id="order">
-💬 Commander sur WhatsApp
-</button>
+  <button
+    class="btn"
+    id="order">
+
+    💬 Commander sur WhatsApp
+
+  </button>
 
 </aside>
+
 
 <script src="script.js"></script>
 
